@@ -4,6 +4,11 @@ function Card(props) {
     return(
         <div className="card">
             <div className="card-left">
+                <div className="ein">
+                    <span>
+                        EIN: {props.ein}
+                    </span>
+                </div>
                 <div className="avatar">
                     <img src={props.picture} alt={props.firstName}/>
                 </div>
@@ -33,6 +38,10 @@ function Card(props) {
                         <div className="email">
                             <span className="label">Email: </span>
                             <a href={'mailto:' + props.email}>{props.email}</a>
+                        </div>
+                        <div className="email">
+                            <span className="label">IP: </span>
+                            <a href={props.ip}>{props.ip}</a>
                         </div>
                     </div>
                 </div>

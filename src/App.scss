@@ -78,8 +78,29 @@ main {
         color: $dark;
     }
 }
+.contact-info > div {
+    display: flex;
+}
 .label {
     font-weight: 700;
+    background-color: $accent;
+    padding: 2px 5px;
+    color: $light;
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+    border-radius: 4px 0px 0px 4px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    flex-basis: 60px;
+}
+.phone a,
+.email a {
+    background: $light;
+    padding: 2px 10px;
+    border-radius: 0px 4px 4px 0px;
 }
 .card {
     padding: 0px;
@@ -101,6 +122,13 @@ main {
         font-size: 0.9rem;
         padding: 5px;
     }
+    .ein {
+        text-align: center;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 0.7rem;
+    }
     .avatar {
         padding-bottom: 20px;
         img {
@@ -114,6 +142,8 @@ main {
     .name {
         padding-right: 20px;
         font-size: 1.2rem;
+        font-weight: 700;
+        color: $accent;
     }
     .catch-phrase {
         font-size: 0.8rem;
@@ -134,6 +164,7 @@ main {
         flex-direction: column;
         a {
             color: $accent;
+            text-decoration: none;
         }
         .job-title {
             font-weight: 700;

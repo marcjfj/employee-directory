@@ -9,15 +9,17 @@ function List() {
         const listItems = list.list.employees.map((employee) =>
             // <li key={employee.id}>{employee.catch_phrase}</li>
             <Card
-            key = {employee.id}
-            picture = {employee.picture}
-            firstName = {employee.first_name}
-            lastName = {employee.last_name}
-            catchPhrase = {employee.catch_phrase}
-            jobTitle = {employee.job_title}
-            department = {employee.department}
-            email = {employee.email}
-            phone = {employee.phone}
+                key = {employee.id}
+                picture = {employee.picture}
+                firstName = {employee.first_name}
+                lastName = {employee.last_name}
+                catchPhrase = {employee.catch_phrase}
+                jobTitle = {employee.job_title}
+                department = {employee.department}
+                email = {employee.email}
+                phone = {employee.phone}
+                ip = {employee.ip_address}
+                ein = {employee.ein}
             />
             
         );

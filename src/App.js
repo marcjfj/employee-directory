@@ -74,7 +74,7 @@ function App() {
     <div className="App">
       <header>
         <h1>
-          Acme, Inc. Directory
+          Acme, Inc. Employee Directory
         </h1>
       </header>
       <div className="container">

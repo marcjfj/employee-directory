@@ -7,6 +7,9 @@ function SideBar(props) {
         return (
             <button key={i} value={department} onClick={(e) => props.setDepartment(e.target.value)}>
                 {department}
+                <span className="count">
+                    ({employees.filter(employee => employee.department === department).length})
+                </span>
             </button>
             )
     });

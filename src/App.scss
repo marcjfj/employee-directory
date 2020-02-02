@@ -1,4 +1,4 @@
-$dark: rgb(28, 34, 54);
+$dark: rgb(34, 31, 70);
 $accent: rgb(56, 57, 119);
 $light: rgb(227, 227, 245);
 $off: rgb(227, 227, 245);
@@ -47,6 +47,13 @@ header {
                 margin: 5px 0;
                 border-radius: 4px;
                 box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.233);
+                color: $dark;
+            }
+            .count {
+                color: $accent;
+                font-style: italic;
+                font-weight: 700;
+                margin: 0 5px;
             }
         }
         .clear {
@@ -84,9 +91,10 @@ main {
     margin-bottom: 15px;
     display: flex;
     flex-wrap: nowrap;
+    color: $dark;
     .department {
         text-align: center;
-        color: $dark;
+        color: $accent;
         font-weight: 700;
         margin: 0px -20px -20px -20px;
         background-color: $off;
@@ -105,6 +113,7 @@ main {
     }
     .name {
         padding-right: 20px;
+        font-size: 1.2rem;
     }
     .catch-phrase {
         font-size: 0.8rem;

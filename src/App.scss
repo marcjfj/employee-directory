@@ -1,0 +1,148 @@
+$dark: rgb(28, 34, 54);
+$accent: rgb(56, 57, 119);
+$light: rgb(227, 227, 245);
+$off: rgb(227, 227, 245);
+header {
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background: $dark;
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: $light;
+    }
+}
+.container {
+    padding-top: 50px;
+    display: flex;
+
+    aside {
+        min-width: 300px;
+        background-color: $light;
+        padding: 20px;
+        min-height: calc(100vh - 50px);
+        h3 {
+            color: $accent;
+        }
+        input,
+        select {
+            width: 100%;
+            border: none;
+            box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.233);
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .departments {
+            margin-top: 20px;
+            button {
+                background: #fff;
+                border: none;
+                padding: 5px 20px;
+                display: block;
+                margin: 5px 0;
+                border-radius: 4px;
+                box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.233);
+            }
+        }
+        .clear {
+            button {
+                background: $accent;
+                border: none;
+                color: #fff;
+                padding: 5px 20px;
+                margin: 5px 0;
+                border-radius: 4px;
+                box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.233);
+            }
+        }
+    }
+}
+main {
+    padding: 20px;
+    background-color: $light;
+    flex-basis: 100%;
+    h2 {
+        text-align: center;
+        color: $dark;
+    }
+}
+.label {
+    font-weight: 700;
+}
+.card {
+    padding: 0px;
+    border-radius: 4px;
+    // border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.199);
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    .department {
+        text-align: center;
+        color: $dark;
+        font-weight: 700;
+        margin: 0px -20px -20px -20px;
+        background-color: $off;
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    .avatar {
+        padding-bottom: 20px;
+        img {
+            display: block;
+            border-radius: 1000px;
+            background-color: $light;
+            margin: 0 auto;
+            height: 75px;
+        }
+    }
+    .name {
+        padding-right: 20px;
+    }
+    .catch-phrase {
+        font-size: 0.8rem;
+        text-align: center;
+        font-style: italic;
+        color: $light;
+        margin-bottom: 10px;
+    }
+    .card-left {
+        background-color: $accent;
+        padding: 20px;
+        flex-basis: 30%;
+    }
+    .card-right {
+        flex-basis: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        a {
+            color: $accent;
+        }
+        .job-title {
+            font-weight: 700;
+            font-size: 0.8rem;
+            font-style: italic;
+            color: $accent;
+        }
+    }
+    .top-part {
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-part {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        div {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import ListContext from '../utils/ListContext';
 
 function SideBar(props) {
-    const {employees, searchTerm} = useContext(ListContext).list;
+    const {employees} = useContext(ListContext).list;
     const departments = [...new Set(employees.map(item => item.department))].map((department, i) => {
         return (
             <button key={i} value={department} onClick={(e) => props.setDepartment(e.target.value)}>

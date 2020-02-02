@@ -16,7 +16,6 @@ function App() {
     sortBy: '',
   });
 
-  const searchTerm = useRef();
   
   function getEmployees() {
 
@@ -85,6 +84,7 @@ function App() {
             setDepartment={setDepartment}
             setSort={setSort}
             clearFilters={clearFilters}
+            searchTerm={filter.searchTerm}
           />
           <main>
               <List />
